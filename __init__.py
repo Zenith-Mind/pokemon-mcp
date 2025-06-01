@@ -1,5 +1,5 @@
 """
-Pokemon MCP Server - A modular Pokemon information and strategy server.
+Pokemon MCP Server 
 """
 
 from .pokemon_mcp import mcp
