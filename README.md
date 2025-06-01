@@ -69,3 +69,4 @@ uv run pokemon_mcp.py
 - Compare Pokemon: `compare pikachu charizard`
 - Get type matchups: `strategy mewtwo`
 - Get team suggestions: `team balanced offensive`
+# Updated by Zenith-Mind
