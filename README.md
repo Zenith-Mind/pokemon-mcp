@@ -6,6 +6,10 @@ A modular Pokemon information and strategy server that provides:
 - Type matchup analysis
 - Team composition suggestions
 
+# Pokemon MCP Interface
+
+A modern web interface for interacting with Pokemon data using MCP.
+
 ## Features
 
 - **Information Retrieval**: Get detailed Pokemon data including stats, types, abilities, and moves
@@ -13,21 +17,10 @@ A modular Pokemon information and strategy server that provides:
 - **Strategy**: Analyze type matchup analysis and get counter-strategy recommendations
 - **Team Building**: Get team suggestions based on roles and type coverage
 
-## Project Structure
-
-```
-pokemon/
-├── pokemon_mcp.py      # Main server file
-└── modules/
-    ├── info_retrieval.py    # Pokemon data fetching
-    ├── comparison.py        # Pokemon comparison
-    ├── strategy.py          # Type matchup analysis
-    └── team_composition.py  # Team building
-```
-
 ## Setup and Configuration
 
 ### Prerequisites
+
 1. Install uv if not already installed:
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
@@ -58,6 +51,11 @@ Replace `/path/to/pokemon` with your actual path to the pokemon directory.
 
 ## Usage
 
+### Set up environment variables:
+   ```bash
+   GROQ_API_KEY=your_api_key_here
+   ```
+
 ### Running the Server at 8000
 ```bash
 uv run pokemon_mcp.py
@@ -67,6 +65,7 @@ uv run pokemon_mcp.py
 ```bash
 uv run web_interface.py
 ```
+
 
 ### Example Queries
 

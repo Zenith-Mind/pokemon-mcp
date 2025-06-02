@@ -4,11 +4,7 @@ from langchain_mcp_adapters.client import MultiServerMCPClient
 from langgraph.prebuilt import create_react_agent
 import asyncio
 import os
-import logging
 
-# Set up logging
-logging.basicConfig(level=os.getenv('LOG_LEVEL', 'ERROR'))
-logger = logging.getLogger(__name__)
 
 if os.getenv('OPENAI_API_KEY'):
     llm = ChatOpenAI(model="o3-mini")
@@ -35,7 +31,7 @@ async def main():
         "suggest_team"
     ]]
     
-    logger.info("Loaded Pokémon MCP tools: " + ", ".join(tool.name for tool in pokemon_tools))
+    print("Loaded Pokémon MCP tools: " + ", ".join(tool.name for tool in pokemon_tools))
     
     agent = create_react_agent(
         llm,
