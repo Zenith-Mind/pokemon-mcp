@@ -58,9 +58,14 @@ Replace `/path/to/pokemon` with your actual path to the pokemon directory.
 
 ## Usage
 
-### Running the Server
+### Running the Server at 8000
 ```bash
 uv run pokemon_mcp.py
+```
+
+### Running the Frontend Interface at 8080
+```bash
+uv run web_interface.py
 ```
 
 ### Example Queries
