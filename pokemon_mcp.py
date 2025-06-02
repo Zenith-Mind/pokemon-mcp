@@ -58,4 +58,4 @@ async def suggest_team(description: str) -> str:
     return await team_module.suggest_team(description)
 
 if __name__ == "__main__":
-    mcp.run(transport='stdio')
+    mcp.run(transport='sse')
