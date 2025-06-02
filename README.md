@@ -65,7 +65,7 @@ uv run pokemon_mcp.py
 ```bash
 uv run web_interface.py
 ```
-
+![Pokemon MCP Interface](img/MCP_INTERFACE.png)
 
 ### Example Queries
 
